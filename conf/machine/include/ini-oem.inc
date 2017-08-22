@@ -15,6 +15,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
 
 MACHINE_EXTRA_RRECOMMENDS = " \
     gst-plugin-dvbmediasink \
+    rtl8192eu \
     "
 
 include conf/machine/include/autoload-filesystems.inc
@@ -71,7 +72,7 @@ IMAGE_CMD_ubi_append = "\
     rm -rf xsolomini3; \
     "
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost wlan bootsplash omb osdposition"
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost wlan bootsplash omb osdposition kernelwifi extrakernelwifi"
 
 BOOTLOGO_FILENAME = "splash.bin"
 
