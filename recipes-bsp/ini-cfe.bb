@@ -7,11 +7,11 @@ require conf/license/license-gplv2.inc
 inherit deploy
 
 PV = "1.0"
-PR = "r3"
+PR = "r4"
 
 S = "${WORKDIR}"
 
-SRC_URI = "file://cfe.bmp file://finished.bmp file://imageversion.bmp file://kernel.bmp file://rootfs.bmp file://splash.bmp"
+SRC_URI = "file://cfe.bmp file://finished.bmp file://imageversion.bmp file://kernel.bmp file://rootfs.bmp file://splash.bmp file://splash.bin"
 
 
 ALLOW_EMPTY_${PN} = "1"
@@ -34,6 +34,9 @@ do_deploy() {
     fi
     if [ -e splash.bmp ]; then
         install -m 0644 splash.bmp ${DEPLOYDIR}/splash.bmp
+    fi
+    if [ -e splash.bin ]; then
+        install -m 0644 splash.bin ${DEPLOYDIR}/${BOOTLOGO_FILENAME}
     fi
 }
 
