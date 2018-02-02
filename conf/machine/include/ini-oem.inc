@@ -76,3 +76,4 @@ MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost wlan bootsplash omb osd
 BOOTLOGO_FILENAME = "splash.bin"
 
 require conf/machine/include/tune-mips32.inc
+require conf/machine/include/soc-family.inc
