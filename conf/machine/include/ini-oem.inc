@@ -1,9 +1,6 @@
 # We know about rtc
 include conf/machine/include/build-extras.inc
 
-MTD_KERNEL = "mtd2"
-MTD_ROOTFS = "mtd0"
-
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
