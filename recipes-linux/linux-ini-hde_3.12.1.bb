@@ -2,11 +2,11 @@ SUMMARY = "Linux kernel for ${MACHINE}"
 SECTION = "kernel"
 LICENSE = "GPLv2"
 
-KV = "3.6.0"
-SRCDATE = "20140610"
+KV = "3.12.1"
+SRCDATE = "20140403"
 
-SRC_URI[md5sum] = "3a2b0f1df094019e07290e85e9ba700e"
-SRC_URI[sha256sum] = "a2e7e6a3b9344412e33855372a71f6c1f2e12a598ca8c8cc6b1b0a929ae698b0"
+SRC_URI[md5sum] = "b1c8d624f2ee1f304e56cedc2c69112d"
+SRC_URI[sha256sum] = "badb5446dad5f9d4454b300677c760c388751867c7728fe9cc1a1b3098642ae8"
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
@@ -22,37 +22,34 @@ PKG_kernel-image = "kernel-image"
 RPROVIDES_kernel-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES_kernel-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "http://source.mynonpublic.com/ini/bcm7413-linux-${KV}-${SRCDATE}.tar.gz \
+SRC_URI += "http://source.mynonpublic.com/ini/bcm7358-linux-${KV}-${SRCDATE}.tgz \
 	file://defconfig \
-	file://mtd_nor_nand.patch \
-	file://0001-kernel-add-support-for-gcc-5.patch \
-	file://0001-Revert-MIPS-mm-Add-compound-tail-page-_mapcount-when.patch \
-	file://0001-Revert-MIPS-Add-fast-get_user_pages.patch \
 	file://add-dmx-source-timecode.patch \
+	file://add-rt2800usb-wifi-devices.patch \
 	file://af9015-output-full-range-SNR.patch \
 	file://af9033-output-full-range-SNR.patch \
 	file://as102-adjust-signal-strength-report.patch \
 	file://as102-scale-MER-to-full-range.patch \
-	file://cinergy_s2_usb_r2.patch \
 	file://cxd2820r-output-full-range-SNR.patch \
-	file://dvb-usb-a867.patch \
 	file://dvb-usb-dib0700-disable-sleep.patch \
-	file://dvb-usb-rtl2832.patch \
 	file://dvb_usb_disable_rc_polling.patch \
-	file://em28xx_add_terratec_h5_rev3.patch \
 	file://fix-proc-cputype.patch \
-	file://fixme-hardfloat.patch \
 	file://iosched-slice_idle-1.patch \
 	file://it913x-switch-off-PID-filter-by-default.patch \
 	file://tda18271-advertise-supported-delsys.patch \
-	file://fix-dvb-siano-sms-order.patch \
-	file://mxl5007t-add-no_probe-and-no_reset-parameters.patch \
 	file://nfs-max-rwsize-8k.patch \
+	file://mxl5007t-add-no_probe-and-no_reset-parameters.patch \
+	file://0001-restore-minimal-amount-of-queueing.patch \
+	file://rt2800usb_fix_warn_tx_status_timeout_to_dbg.patch \
+	file://linux-3.12.1-gcc-4.9.3-build-error-fixed.patch \
+	file://kernel-add-support-for-gcc-5.patch \
 	file://rtl8712-fix-warnings.patch \
-	file://rtl8187se-fix-warnings.patch \
 	file://kernel-add-support-for-gcc6.patch \
-	file://dvb_frontend-Multistream-support-3.6.patch \
-	file://timeconst_perl5.patch \
+	file://0001-Support-TBS-USB-drivers.patch \
+	file://0001-STV-Add-PLS-support.patch \
+	file://0001-STV-Add-SNR-Signal-report-parameters.patch \
+	file://0001-stv090x-optimized-TS-sync-control.patch \
+	file://blindscan2.patch \
 	file://genksyms_fix_typeof_handling.patch \
 	"
 
@@ -74,14 +71,14 @@ kernel_do_install_append() {
 }
 
 pkg_postinst_kernel-image () {
-    if [ "x$D" == "x" ]; then
-        if [ -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz ] ; then
-            flash_erase /dev/${MTD_KERNEL} 0 0
-            nandwrite -p /dev/${MTD_KERNEL} /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
-            rm -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
-        fi
-    fi
-    true
+	if [ "x$D" == "x" ]; then
+		if [ -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz ] ; then
+			flash_erase /dev/${MTD_KERNEL} 0 0
+			nandwrite -p /dev/${MTD_KERNEL} /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
+			rm -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz
+		fi
+	fi
+	true
 }
 
 do_rm_work() {

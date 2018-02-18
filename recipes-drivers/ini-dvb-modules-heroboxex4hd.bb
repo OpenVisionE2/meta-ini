@@ -1,4 +1,4 @@
-SUMMARY = "Hardware drivers for Herobox EX4 HD"
+SUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"

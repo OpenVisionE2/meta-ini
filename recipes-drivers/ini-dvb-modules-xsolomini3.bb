@@ -1,4 +1,4 @@
-SUMMARY = "Hardware drivers for X Solo Mini 3"
+SUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"

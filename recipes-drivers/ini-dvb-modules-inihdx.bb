@@ -1,4 +1,4 @@
-SUMMARY = "Hardware drivers for Beyonwiz T3"
+SUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"

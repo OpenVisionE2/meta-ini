@@ -4,15 +4,15 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
-KV = "3.14.2"
+KV = "3.12.1"
 SRCDATE = "20160122"
 
 PV = "${KV}+${SRCDATE}"
 
-SRC_URI[md5sum] = "a0bbd2b0a26d750e89972364e52fa4e9"
-SRC_URI[sha256sum] = "80997180ab4092afbbefe1e42914ff1c66fe9de861789e9c4b86027dbddb840e"
+SRC_URI[md5sum] = "efc03d2687c7204a2475e8b727ce67eb"
+SRC_URI[sha256sum] = "f2acb694b38f6ab90c79cb7ef4650253c2b204ad611cdf9ad22469a7850e3af7"
 
-SRC_URI = "http://source.mynonpublic.com/ini/yhgd5034-drivers-${KV}-${SRCDATE}.zip"
+SRC_URI = "http://source.mynonpublic.com/ini/ini-1000-drivers-${KV}-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
@@ -27,7 +27,7 @@ do_install() {
     install -d ${D}/lib/modules/${KV}/extra
     install -d ${D}/${sysconfdir}/modules-load.d
     for i in dvb; do
-        install -m 0755 ${WORKDIR}/$i.ko ${D}/lib/modules/${KV}/extra/$i.ko
+        install -m 0755 ${WORKDIR}/$i.ko ${D}/lib/modules/${KV}/extra
         echo $i >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
     done
 }

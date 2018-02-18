@@ -1,4 +1,4 @@
-SUMMARY = "Hardware drivers for Opticum Twin"
+SUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
@@ -8,7 +8,6 @@ KV = "3.14.2"
 SRCDATE = "20160122"
 
 PV = "${KV}+${SRCDATE}"
-PR = "r1"
 
 SRC_URI[md5sum] = "3469634ce63a6f121b905dec81b8bd51"
 SRC_URI[sha256sum] = "bf486def7044289debbd7d6017cd2d04ea9bd5eba91eec9b89c951af6654904e"
