@@ -1,1 +1,2 @@
-Import of inihde2 machine layer from OE-Alliance
+# meta-ini
+INI BSP layer for PLi's OE
