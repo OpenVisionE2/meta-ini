@@ -62,11 +62,7 @@ IMAGE_CMD_ubi_append = "\
     rm -rf atemio; \
     rm -rf miraclebox; \
     rm -rf beyonwiz; \
-    rm -rf bwidowx; \
-    rm -rf bwidowx2; \
     rm -rf opticum; \
-    rm -rf herobox; \
-    rm -rf xsolomini3; \
     "
 
 MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost wlan bootsplash omb osdposition kernelwifi extrakernelwifi"
