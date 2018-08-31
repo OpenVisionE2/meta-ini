@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "xpeedlx|sezam1000hd|mbmini|atemio5x00"
+
 KV = "3.12.1"
 SRCDATE = "20160122"
 

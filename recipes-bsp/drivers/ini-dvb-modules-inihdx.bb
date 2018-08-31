@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "ventonhdx|sezam5000hd|mbtwin|beyonwizt3"
+
 KV = "3.6.0"
 SRCDATE = "20160406"
 

@@ -4,6 +4,8 @@ LICENSE = "GPLv2"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "ventonhdx|sezam5000hd|mbtwin|beyonwizt3"
+
 KV = "3.6.0"
 SRCDATE = "20140610"
 

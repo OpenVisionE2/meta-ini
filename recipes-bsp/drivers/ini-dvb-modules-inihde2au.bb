@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "beyonwizt2"
+
 KV = "3.14.2"
 SRCDATE = "20180324"
 

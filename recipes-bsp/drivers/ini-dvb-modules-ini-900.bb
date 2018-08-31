@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "xpeedlx3|sezammarvel"
+
 KV = "3.14.2"
 SRCDATE = "20160121"
 

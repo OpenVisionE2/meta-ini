@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "atemio6200|atemio6100|atemio6000"
+
 KV = "3.14.2"
 SRCDATE = "20160122"
 

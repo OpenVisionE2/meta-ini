@@ -4,6 +4,8 @@ LICENSE = "GPLv2"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "opticumtt|mbminiplus|mbhybrid|evoslim|bwidowx2|beyonwizt2|atemio6200|atemio6100|atemio6000"
+
 KV = "3.14.2"
 SRCDATE = "20150605"
 

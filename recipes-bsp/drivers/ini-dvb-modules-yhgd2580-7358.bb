@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "bwidowx"
+
 KV = "3.12.1"
 SRCDATE = "20160122"
 
