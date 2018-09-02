@@ -65,8 +65,8 @@ IMAGE_CMD_ubi_append = "\
     rm -rf opticum; \
     "
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost wlan bootsplash omb osdposition kernelwifi extrakernelwifi"
-
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost osdposition kernelwifi extrakernelwifi"
+#MACHINE_FEATURES += "bootsplash"
 BOOTLOGO_FILENAME = "splash.bin"
 
 require conf/machine/include/tune-mips32.inc
