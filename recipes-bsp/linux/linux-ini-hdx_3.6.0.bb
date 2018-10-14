@@ -29,7 +29,6 @@ RPROVIDES_kernel-image = "kernel-image-${KERNEL_VERSION}"
 SRC_URI += "http://source.mynonpublic.com/ini/bcm7413-linux-${KV}-${SRCDATE}.tar.gz \
 	file://defconfig \
 	file://mtd_nor_nand.patch \
-	file://0001-kernel-add-support-for-gcc-5.patch \
 	file://0001-Revert-MIPS-mm-Add-compound-tail-page-_mapcount-when.patch \
 	file://0001-Revert-MIPS-Add-fast-get_user_pages.patch \
 	file://add-dmx-source-timecode.patch \

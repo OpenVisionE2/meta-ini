@@ -42,7 +42,6 @@ SRC_URI += "http://source.mynonpublic.com/ini/bcm7425-linux-${KV}-${SRCDATE}.tgz
 	file://tda18271-advertise-supported-delsys.patch \
 	file://rt2800usb_fix_warn_tx_status_timeout_to_dbg.patch \
 	file://linux-3.14.2-gcc-4.9.3-build-error-fixed.patch \
-	file://kernel-add-support-for-gcc-5.patch \
 	file://rtl8712-fix-warnings.patch \
 	file://kernel-add-support-for-gcc6.patch \
 	file://0001-Support-TBS-USB-drivers.patch \
