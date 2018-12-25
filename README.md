@@ -1,2 +1,2 @@
 # meta-ini
-INI BSP layer for PLi's OE
+INI BSP layer for Open Vision
