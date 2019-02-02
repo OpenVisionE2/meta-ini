@@ -65,9 +65,7 @@ IMAGE_CMD_ubi_append = "\
     rm -rf opticum; \
     "
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost osdposition kernelwifi extrakernelwifi \
-    ${@bb.utils.contains_any("MACHINE", "xpeedlxpro", "", "micom", d)} \
-"
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost osdposition kernelwifi extrakernelwifi micom"
 #MACHINE_FEATURES += "bootsplash"
 BOOTLOGO_FILENAME = "splash.bin"
 
