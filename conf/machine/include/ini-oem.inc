@@ -1,6 +1,8 @@
 # We know about rtc
 include conf/machine/include/build-extras.inc
 
+BOX_BRAND = "ini"
+
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
