@@ -14,7 +14,9 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
 
 MACHINE_EXTRA_RRECOMMENDS += "\
     gst-plugin-dvbmediasink \
-    rtl8192eu \
+    rtl8192cu \
+    firmware-rtl8192cu \
+    firmware-rtl8192cufw \
     "
 
 include conf/machine/include/autoload-filesystems.inc
