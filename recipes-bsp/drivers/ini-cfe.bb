@@ -7,7 +7,6 @@ require conf/license/license-gplv2.inc
 inherit deploy
 
 PV = "1.0"
-PR = "r4"
 
 S = "${WORKDIR}"
 
