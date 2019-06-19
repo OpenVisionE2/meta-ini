@@ -14,8 +14,6 @@ SRC_URI[sha256sum] = "a2e7e6a3b9344412e33855372a71f6c1f2e12a598ca8c8cc6b1b0a929a
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-MACHINE_KERNEL_PR_append = ".1"
-
 inherit kernel machine_kernel_pr
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
