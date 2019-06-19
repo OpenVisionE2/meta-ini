@@ -4,7 +4,6 @@ LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
 PV = "1.0"
-PR = "r3"
 
 SRC_URI = "file://ethwol.sh"
 
