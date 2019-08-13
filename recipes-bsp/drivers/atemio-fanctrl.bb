@@ -1,6 +1,6 @@
 PV = "1.0"
 
-require conf/license/openpli-gplv2.inc
+require conf/license/openvision-gplv2.inc
 
 SRC_URI = "file://fancontrol.tar.gz"
 
