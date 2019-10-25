@@ -1,6 +1,6 @@
 require ini-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "bwidowx2"
+COMPATIBLE_MACHINE = "^(bwidowx2)$"
 
 KV = "3.14.2"
 SRCDATE = "20160122"

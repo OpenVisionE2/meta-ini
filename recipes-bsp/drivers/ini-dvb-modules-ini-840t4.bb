@@ -1,6 +1,6 @@
 require ini-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "beyonwizt4"
+COMPATIBLE_MACHINE = "^(beyonwizt4)$"
 
 KV = "3.14.2"
 SRCDATE = "20180324"

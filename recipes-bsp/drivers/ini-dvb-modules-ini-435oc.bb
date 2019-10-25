@@ -1,6 +1,6 @@
 require ini-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "opticumtt"
+COMPATIBLE_MACHINE = "^(opticumtt)$"
 
 KV = "3.14.2"
 SRCDATE = "20160122"

@@ -1,6 +1,6 @@
 require ini-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "evoslim"
+COMPATIBLE_MACHINE = "^(evoslim)$"
 
 KV = "3.14.2"
 SRCDATE = "20160122"

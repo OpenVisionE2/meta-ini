@@ -4,7 +4,7 @@ LICENSE = "GPLv2"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis"
+COMPATIBLE_MACHINE = "^(xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis)$"
 
 KV = "3.14.2"
 SRCDATE = "20150603"
