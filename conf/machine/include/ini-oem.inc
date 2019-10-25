@@ -12,7 +12,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
     kernel-module-cdfs \
     "
 
-MACHINE_EXTRA_RRECOMMENDS += "\
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     gst-plugin-dvbmediasink \
     kernel-module-rtl8192cu \
     firmware-rtl8192cu \
