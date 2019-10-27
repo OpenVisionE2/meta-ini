@@ -3,8 +3,6 @@ SECTION = "base"
 PRIORITY = "optional"
 RDEPENDS_${PN} = "ncurses"
 
-PACKAGE_ARCH = "${MACHINE_ARCH}"
-
 LICENSE = "CLOSED"
 
 PACKAGES = "ini-blindscan-dvbs-utils ini-blindscan-dvbc-utils"

@@ -70,7 +70,6 @@ IMAGE_CMD_ubi_append = "\
     "
 
 MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost osdposition kernelwifi extrakernelwifi micom"
-#MACHINE_FEATURES += "bootsplash"
 BOOTLOGO_FILENAME = "splash.bin"
 
 require conf/machine/include/tune-mips32.inc
