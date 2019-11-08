@@ -69,7 +69,11 @@ IMAGE_CMD_ubi_append = "\
     rm -rf opticum; \
     "
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost osdposition kernelwifi extrakernelwifi micom"
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff usbhost osdposition kernelwifi extrakernelwifi micom middleflash"
+
+# Broken bootloader can only flash around 100 MB
+FLASHSIZE = "96"
+
 BOOTLOGO_FILENAME = "splash.bin"
 
 require conf/machine/include/tune-mips32.inc
