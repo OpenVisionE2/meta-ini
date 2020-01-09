@@ -13,17 +13,9 @@ INITSCRIPT_PARAMS = "stop 32 0 ."
 
 S = "${WORKDIR}"
 
+FILES_${PN} = "${sysconfdir}"
+
 do_install() {
     install -d ${D}${sysconfdir}/init.d
     install -m 0755 ${WORKDIR}/ethwol.sh ${D}${sysconfdir}/init.d/ethwol
-}
-
-pkg_preinst_${PN}_prepend() {
-#!/bin/sh
-chmod -x $D${sysconfdir}/init.d/ethwol
-}
-
-pkg_postinst_${PN}_append() {
-#!/bin/sh
-chmod 755 $D${sysconfdir}/init.d/ethwol
 }
