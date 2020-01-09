@@ -26,6 +26,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI += "http://source.mynonpublic.com/ini/bcm7425-linux-${KV}-${SRCDATE}.tgz \
 	file://defconfig \
+	file://kernel-add-support-for-gcc9.patch \
 	file://add-rt2x00-wifi-devices.patch \
 	file://add-rtl8192cu-wifi-devices.patch \
 	file://add-dmx-source-timecode.patch \

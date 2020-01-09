@@ -28,8 +28,3 @@ pkg_postinst_${PN}_append() {
 #!/bin/sh
 chmod 755 $D${sysconfdir}/init.d/coldboot
 }
-
-pkg_prerm_${PN}() {
-#!/bin/sh
-exit 0
-}
