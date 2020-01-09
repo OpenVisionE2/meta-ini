@@ -26,6 +26,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI += "http://source.mynonpublic.com/ini/bcm7358-linux-${KV}-${SRCDATE}.tgz \
 	file://defconfig \
+	file://kernel-add-support-for-gcc9.patch \
 	file://add-dmx-source-timecode.patch \
 	file://add-rt2800usb-wifi-devices.patch \
 	file://af9015-output-full-range-SNR.patch \
