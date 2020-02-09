@@ -26,6 +26,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI += "http://source.mynonpublic.com/ini/bcm7413-linux-${KV}-${SRCDATE}.tar.gz \
 	file://defconfig \
+	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
 	file://mtd_nor_nand.patch \
 	file://0001-Revert-MIPS-mm-Add-compound-tail-page-_mapcount-when.patch \
 	file://0001-Revert-MIPS-Add-fast-get_user_pages.patch \
