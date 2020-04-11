@@ -60,7 +60,6 @@ IMAGE_CMD_ubi_append = "\
     zip ${IMAGE_NAME}_usb.zip ${IMAGEDIR}/*; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ubi; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ubifs; \
-    rm -f ${DEPLOY_DIR_IMAGE}/*.manifest; \
     rm -rf ${IMAGEDIR}; \
     rm -rf atemio; \
     rm -rf miraclebox; \
