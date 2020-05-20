@@ -13,7 +13,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
     "
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    ${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-plugin-dvbmediasink", "gst-plugin-dvbmediasink", d)} \
+    gstreamer1.0-plugin-dvbmediasink \
     kernel-module-rtl8192cu \
     firmware-rtl8192cu \
     firmware-rtl8192cufw \
