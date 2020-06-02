@@ -8,10 +8,6 @@ ROOTFS_FILE = "rootfs.bin"
 
 DVBPROVIDER = "kernel"
 
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
-    kernel-module-cdfs \
-    "
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
     kernel-module-rtl8192cu \
