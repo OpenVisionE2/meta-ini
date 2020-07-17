@@ -11,10 +11,10 @@ SRC_URI[sha256sum] = "443c472aa9a66f9b7cf76fc260f4a9524e9831a5ea189d745e06b520a1
 SRC_URI = "http://source.mynonpublic.com/ini/yhgd2580-7358-drivers-${KV}-${SRCDATE}.zip"
 
 do_install() {
-    install -d ${D}/lib/modules/${KV}/extra
+    install -d ${D}${base_libdir}/modules/${KV}/extra
     install -d ${D}/${sysconfdir}/modules-load.d
     for i in dvb; do
-        install -m 0755 ${WORKDIR}/$i.ko ${D}/lib/modules/${KV}/extra/$i.ko
+        install -m 0755 ${WORKDIR}/$i.ko ${D}${base_libdir}/modules/${KV}/extra/$i.ko
         echo $i >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
     done
 }
