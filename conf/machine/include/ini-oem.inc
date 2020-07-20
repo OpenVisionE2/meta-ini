@@ -64,7 +64,7 @@ IMAGE_CMD_ubi_append = "\
     rm -rf opticum; \
     "
 
-MACHINE_FEATURES += "alsa hdmicec switchoff usbhost osdposition micom"
+MACHINE_FEATURES += "alsa hdmicec switchoff usbhost osdposition micom HDMI RCA"
 
 # Broken bootloader can only flash around 100 MB
 FLASHSIZE = "96"
