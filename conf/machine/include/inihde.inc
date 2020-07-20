@@ -17,3 +17,5 @@ UBINIZE_ARGS = "-m 2048 -p 128KiB"
 MACHINE_EXTRA_RRECOMMENDS += "\
     ini-cfe \
     "
+
+STB_PLATFORM = "inihde"

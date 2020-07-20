@@ -21,3 +21,5 @@ MACHINE_EXTRA_RRECOMMENDS += "\
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     ini-dvb-modules-inihdx \
     "
+
+STB_PLATFORM = "inihdx"

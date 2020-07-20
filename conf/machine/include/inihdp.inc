@@ -22,3 +22,5 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 MACHINE_EXTRA_RRECOMMENDS += "\
     ini-cfe \
     "
+
+STB_PLATFORM = "inihdp"
