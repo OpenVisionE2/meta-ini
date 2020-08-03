@@ -15,7 +15,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     firmware-rtl8192cufw \
     "
 
-KERNEL_MODULE_AUTOLOAD += "xfs"
 
 TARGET_ARCH = "mipsel"
 DEFAULTTUNE = "mips32el"
