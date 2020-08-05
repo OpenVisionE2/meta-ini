@@ -10,7 +10,6 @@ MACHINE_FEATURES += "videoenhancement extrasplash blindscan-tbs dvb-c blindscan-
 
 SOC_FAMILY = "bcm7425"
 
-UBI_VOLNAME = "rootfs"
 MKUBIFS_ARGS = "-m 4096 -e 1040384 -c 1984"
 UBINIZE_ARGS = "-m 4096 -p 1024KiB"
 

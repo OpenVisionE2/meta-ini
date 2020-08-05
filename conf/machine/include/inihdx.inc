@@ -10,7 +10,6 @@ MACHINE_FEATURES += "textlcd fanctrl extrasplash blindscan-dvbc blindscan-dvbs c
 
 SOC_FAMILY = "bcm7413"
 
-UBI_VOLNAME = "rootfs"
 MKUBIFS_ARGS = "-m 2048 -e 126976 -c 4096"
 UBINIZE_ARGS = "-m 2048 -p 128KiB"
 
