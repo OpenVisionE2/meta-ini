@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(ventonhdx|sezam5000hd|mbtwin|beyonwizt3)$"
 
-KV = "3.6.0"
 SRCDATE = "20160406"
 
 SRC_URI[md5sum] = "35c14df7d4fefdae315fb9bc64a8b006"

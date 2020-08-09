@@ -1,18 +1,17 @@
 SUMMARY = "Linux kernel for ${MACHINE}"
 SECTION = "kernel"
 LICENSE = "GPLv2"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis)$"
 
-KV = "3.14.2"
+KV = "${KERNELVERSION}"
 SRCDATE = "20150603"
 
 SRC_URI[md5sum] = "0a9eb4bab291ea6047a0c779c0dd4304"
 SRC_URI[sha256sum] = "81effcef755b6b0fe5a930b5bfc058ea1f5195b410819df1585dc52aff0f6d8c"
-
-LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 
@@ -24,7 +23,7 @@ PKG_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image"
 RPROVIDES_${KERNEL_PACKAGE_NAME}-base = "${KERNEL_PACKAGE_NAME}-${KERNEL_VERSION}"
 RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_VERSION}"
 
-SRC_URI += "http://source.mynonpublic.com/ini/bcm7425-linux-${KV}-${SRCDATE}.tgz \
+SRC_URI = "http://source.mynonpublic.com/ini/bcm7425-linux-${KV}-${SRCDATE}.tgz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://add-rt2x00-wifi-devices.patch \

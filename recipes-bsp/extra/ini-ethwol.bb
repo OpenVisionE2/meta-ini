@@ -3,7 +3,6 @@ MAINTAINER = "INI Team"
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
-PV = "1.0"
 
 SRC_URI = "file://ethwol.sh"
 

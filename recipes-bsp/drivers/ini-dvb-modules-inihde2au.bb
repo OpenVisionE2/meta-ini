@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(beyonwizt2)$"
 
-KV = "3.14.2"
 SRCDATE = "20180324"
 
 SRC_URI[md5sum] = "9d99aeed41f43aafa027d5769be26536"

@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(xpeedlx|sezam1000hd|mbmini|atemio5x00)$"
 
-KV = "3.12.1"
 SRCDATE = "20160122"
 
 SRC_URI[md5sum] = "efc03d2687c7204a2475e8b727ce67eb"

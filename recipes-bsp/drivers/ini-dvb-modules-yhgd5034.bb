@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(evoslim)$"
 
-KV = "3.14.2"
 SRCDATE = "20160122"
 
 SRC_URI[md5sum] = "a0bbd2b0a26d750e89972364e52fa4e9"

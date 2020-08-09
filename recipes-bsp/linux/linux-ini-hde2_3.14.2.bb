@@ -1,18 +1,17 @@
 SUMMARY = "Linux kernel for ${MACHINE}"
 SECTION = "kernel"
 LICENSE = "GPLv2"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(opticumtt|mbminiplus|mbhybrid|evoslim|bwidowx2|beyonwizt2|atemio6200|atemio6100|atemio6000)$"
 
-KV = "3.14.2"
+KV = "${KERNELVERSION}"
 SRCDATE = "20150605"
 
 SRC_URI[md5sum] = "166ae419fe710ca8487be6cb6ef83b77"
 SRC_URI[sha256sum] = "f8c54d44f3218809d3b980911075c1094619536bb2723367cc8eacf3665b6df2"
-
-LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 
@@ -24,7 +23,7 @@ PKG_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image"
 RPROVIDES_${KERNEL_PACKAGE_NAME}-base = "${KERNEL_PACKAGE_NAME}-${KERNEL_VERSION}"
 RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_VERSION}"
 
-SRC_URI += "http://source.mynonpublic.com/ini/bcm7362-linux-${KV}-${SRCDATE}.tgz \
+SRC_URI = "http://source.mynonpublic.com/ini/bcm7362-linux-${KV}-${SRCDATE}.tgz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://add-rt2x00-wifi-devices.patch \

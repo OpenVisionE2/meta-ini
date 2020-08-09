@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(opticumtt)$"
 
-KV = "3.14.2"
 SRCDATE = "20160122"
 
 SRC_URI[md5sum] = "3469634ce63a6f121b905dec81b8bd51"

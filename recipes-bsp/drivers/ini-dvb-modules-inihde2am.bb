@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(atemio6200|atemio6100|atemio6000)$"
 
-KV = "3.14.2"
 SRCDATE = "20160122"
 
 SRC_URI[md5sum] = "d337a12a12849d3b96e12d5ad580fea3"

@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(mbminiplus|mbhybrid)$"
 
-KV = "3.14.2"
 SRCDATE = "20160122"
 
 SRC_URI[md5sum] = "0fdcd091fc5657b14fa953e28aca6f5f"

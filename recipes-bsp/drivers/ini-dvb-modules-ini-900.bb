@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(xpeedlx3|sezammarvel)$"
 
-KV = "3.14.2"
 SRCDATE = "20160121"
 
 SRC_URI[md5sum] = "0c851b0d74f121144932cae1292b6dbc"

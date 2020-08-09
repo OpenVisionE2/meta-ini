@@ -2,7 +2,6 @@ require ini-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(mbultra|atemionemesis)$"
 
-KV = "3.14.2"
 SRCDATE = "20160121"
 
 SRC_URI[md5sum] = "3919231c1ee6ad231c5bc75ffca37b2f"
