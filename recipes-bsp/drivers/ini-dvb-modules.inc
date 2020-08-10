@@ -5,7 +5,6 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE}"
 
-KV = "${KERNELVERSION}"
 
 PV = "${KV}+${SRCDATE}"
 

@@ -7,7 +7,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(ventonhdx|sezam5000hd|mbtwin|beyonwizt3)$"
 
-KV = "${KERNELVERSION}"
 SRCDATE = "20140610"
 
 SRC_URI[md5sum] = "3a2b0f1df094019e07290e85e9ba700e"

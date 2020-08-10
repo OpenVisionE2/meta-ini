@@ -7,7 +7,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis)$"
 
-KV = "${KERNELVERSION}"
 SRCDATE = "20150603"
 
 SRC_URI[md5sum] = "0a9eb4bab291ea6047a0c779c0dd4304"

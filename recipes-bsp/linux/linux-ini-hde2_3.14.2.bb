@@ -7,7 +7,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(opticumtt|mbminiplus|mbhybrid|evoslim|bwidowx2|beyonwizt2|atemio6200|atemio6100|atemio6000)$"
 
-KV = "${KERNELVERSION}"
 SRCDATE = "20150605"
 
 SRC_URI[md5sum] = "166ae419fe710ca8487be6cb6ef83b77"
