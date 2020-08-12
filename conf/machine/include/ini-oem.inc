@@ -69,5 +69,7 @@ FLASHSIZE = "96"
 
 BOOTLOGO_FILENAME = "splash.bin"
 
+BLINDSCAN_BINARY = "ini_blindscan"
+
 require conf/machine/include/tune-mips32.inc
 require conf/machine/include/soc-family.inc
