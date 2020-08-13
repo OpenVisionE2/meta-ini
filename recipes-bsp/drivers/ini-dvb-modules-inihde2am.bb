@@ -10,10 +10,10 @@ SRC_URI[sha256sum] = "1877059e3c53d7d5c66e0578d0e4efdff4ace03ecd54cec319be09a00e
 SRC_URI = "http://source.mynonpublic.com/ini/ini-422-drivers-${KV}-${SRCDATE}.zip"
 
 do_install() {
-    install -d ${D}${base_libdir}/modules/${KV}/extra
+    install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
     install -d ${D}${sysconfdir}/modules-load.d
     for i in dvb; do
-        install -m 0755 ${WORKDIR}/$i.ko ${D}${base_libdir}/modules/${KV}/extra/${i}_${MACHINE}.ko
+        install -m 0755 ${WORKDIR}/$i.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra/${i}_${MACHINE}.ko
         echo ${i}_${MACHINE} >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
     done
 }

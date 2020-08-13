@@ -10,10 +10,10 @@ SRC_URI[sha256sum] = "f2acb694b38f6ab90c79cb7ef4650253c2b204ad611cdf9ad22469a785
 SRC_URI = "http://source.mynonpublic.com/ini/ini-1000-drivers-${KV}-${SRCDATE}.zip"
 
 do_install() {
-    install -d ${D}${base_libdir}/modules/${KV}/extra
+    install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
     install -d ${D}${sysconfdir}/modules-load.d
     for i in dvb; do
-        install -m 0755 ${WORKDIR}/$i.ko ${D}${base_libdir}/modules/${KV}/extra
+        install -m 0755 ${WORKDIR}/$i.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
         echo $i >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
     done
 }

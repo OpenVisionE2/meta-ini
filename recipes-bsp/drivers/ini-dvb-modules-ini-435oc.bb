@@ -10,10 +10,10 @@ SRC_URI[sha256sum] = "bf486def7044289debbd7d6017cd2d04ea9bd5eba91eec9b89c951af66
 SRC_URI = "http://source.mynonpublic.com/ini/ini-435oc-drivers-${KV}-${SRCDATE}.zip"
 
 do_install() {
-    install -d ${D}${base_libdir}/modules/${KV}/extra
+    install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
     install -d ${D}${sysconfdir}/modules-load.d
     for i in dvb; do
-        install -m 0755 ${WORKDIR}/$i.ko ${D}${base_libdir}/modules/${KV}/extra/${i}_${MACHINE}.ko
+        install -m 0755 ${WORKDIR}/$i.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra/${i}_${MACHINE}.ko
         echo ${i}_${MACHINE} >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
     done
 }
