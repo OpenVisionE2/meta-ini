@@ -18,9 +18,6 @@ UBINIZE_ARGS = "-m 4096 -p 1024KiB"
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	ini-coldboot \
 	ini-ethwol \
-	"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
 	ini-cfe \
 	"
 

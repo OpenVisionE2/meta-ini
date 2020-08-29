@@ -15,12 +15,9 @@ SOC_FAMILY = "bcm7413"
 MKUBIFS_ARGS = "-m 2048 -e 126976 -c 4096"
 UBINIZE_ARGS = "-m 2048 -p 128KiB"
 
-MACHINE_EXTRA_RRECOMMENDS += "\
-	ini-cfe \
-	"
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	ini-dvb-modules-inihdx \
+	ini-cfe \
 	"
 
 STB_PLATFORM = "inihdx"
