@@ -15,7 +15,7 @@ SRC_URI = "file://tda1002x file://${BLINDSCAN_BINARY}"
 
 PV = "2.1"
 
-S = "${WORKDIR}/"
+S = "${WORKDIR}"
 
 FILES_ini-blindscan-dvbs-utils = "${bindir}/*_blindscan"
 FILES_ini-blindscan-dvbc-utils = "${bindir}/tda1002x"
