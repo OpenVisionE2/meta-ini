@@ -1,9 +1,11 @@
 SUMMARY = "Utilities for transponder & dvb-s blindscan"
 SECTION = "base"
 PRIORITY = "optional"
+LICENSE = "CLOSED"
+
 RDEPENDS_${PN} = "ncurses"
 
-LICENSE = "CLOSED"
+COMPATIBLE_MACHINE = "^(xpeedlx|sezam1000hd|mbmini|bwidowx|atemio5x00|xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis|ventonhdx|sezam5000hd|mbtwin|beyonwizt3)$"
 
 PACKAGES = "ini-blindscan-dvbs-utils ini-blindscan-dvbc-utils"
 
