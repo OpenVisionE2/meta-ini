@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 
 RDEPENDS_${PN} = "ncurses"
 
-COMPATIBLE_MACHINE = "^(xpeedlx|sezam1000hd|mbmini|bwidowx|atemio5x00|xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis|ventonhdx|sezam5000hd|mbtwin|beyonwizt3)$"
+COMPATIBLE_MACHINE = "^(xpeedlx|sezam1000hd|mbmini|bwidowx|atemio5x00|xpeedlx3|sezammarvel|mbultra|beyonwizt4|atemionemesis|ventonhdx|sezam5000hd|mbtwin|beyonwizt3|atemio6000|atemio6200|mbminiplus|opticumtt|bwidowx2)$"
 
 PACKAGES = "ini-blindscan-dvbs-utils ini-blindscan-dvbc-utils"
 
