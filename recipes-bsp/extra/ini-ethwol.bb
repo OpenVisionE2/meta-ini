@@ -3,7 +3,6 @@ MAINTAINER = "INI Team"
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
-
 SRC_URI = "file://ethwol.sh"
 
 inherit update-rc.d
@@ -15,6 +14,6 @@ S = "${WORKDIR}"
 FILES_${PN} = "${sysconfdir}"
 
 do_install() {
-    install -d ${D}${sysconfdir}/init.d
-    install -m 0755 ${WORKDIR}/ethwol.sh ${D}${sysconfdir}/init.d/ethwol
+	install -d ${D}${sysconfdir}/init.d
+	install -m 0755 ${WORKDIR}/ethwol.sh ${D}${sysconfdir}/init.d/ethwol
 }
