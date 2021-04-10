@@ -14,6 +14,6 @@ S = "${WORKDIR}"
 FILES_${PN} = "${sysconfdir}"
 
 do_install() {
-	install -d ${D}${sysconfdir}/init.d
-	install -m 0755 ${WORKDIR}/ethwol.sh ${D}${sysconfdir}/init.d/ethwol
+	install -d ${D}${INIT_D_DIR}
+	install -m 0755 ${WORKDIR}/ethwol.sh ${D}${INIT_D_DIR}/ethwol
 }
