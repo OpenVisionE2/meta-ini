@@ -6,7 +6,6 @@ BOX_BRAND = "ini"
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
-DVBPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	kernel-module-rtl8192cu \
