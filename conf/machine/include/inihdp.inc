@@ -19,6 +19,10 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	ini-coldboot \
 	ini-ethwol \
 	ini-cfe \
+	kernel-module-extrawlan-rt3070 \
+	firmware-rt3070 \
+	kernel-module-extrawlan-rt8723a \
+	firmware-rtl8723a \
 	"
 
 STB_PLATFORM = "inihdp"

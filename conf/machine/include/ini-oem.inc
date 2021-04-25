@@ -8,7 +8,7 @@ ROOTFS_FILE = "rootfs.bin"
 
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-	kernel-module-rtl8192cu \
+	kernel-module-extrawlan-rtl8192cu \
 	firmware-rtl8192cu \
 	firmware-rtl8192cufw \
 	"
